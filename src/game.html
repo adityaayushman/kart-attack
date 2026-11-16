@@ -1,0 +1,43 @@
+<div id="stage">
+  <canvas id="gl"></canvas>
+  <span class="liveTag">Live from the canyon</span>
+  <button id="playLive" class="cta" type="button">Drive it yourself</button>
+  <div id="huds"></div>
+  <canvas id="mini" width="264" height="264"></canvas>
+  <div id="gBig" hidden></div>
+  <div id="gTouch">
+    <div><button class="tb" id="tL" type="button">&#9664;</button><button class="tb" id="tR" type="button">&#9654;</button></div>
+    <div><button class="tb" id="tI" type="button">Item</button><button class="tb" id="tB" type="button">Brake</button><button class="tb" id="tD" type="button">Drift</button></div>
+  </div>
+  <button id="gQuit" type="button">Menu (Esc)</button>
+  <div id="gCard" hidden>
+    <div id="gCardIn">
+      <div id="scrMenu">
+        <h3>Pick your race</h3>
+        <div class="rowBtns"><span>Circuit</span><button class="pill" id="trk0" type="button" aria-pressed="true">Canyon Loop</button><button class="pill" id="trk1" type="button" aria-pressed="false">Rattlesnake Pass</button></div>
+        <p id="menuBest"></p>
+        <div class="modes">
+          <button id="mGP" type="button"><b>Grand Prix</b>Three laps against five locals, items on.</button>
+          <button id="mTT" type="button"><b>Time trial</b>Empty track. Chase the ghost of your best lap.</button>
+          <button id="mSplit" type="button"><b>Split screen</b>Two players on one keyboard, plus four locals.</button>
+          <button id="mOnline" type="button"><b>Online</b>Race whoever else has this page open right now.</button>
+        </div>
+        <p>Split screen keys: player 1 on W A S D, Left Shift to drift, E for items. Player 2 on the arrows, Right Shift to drift, / for items.</p>
+        <div class="rowBtns"><button class="pill" id="optSound" type="button">Sound on</button><button class="pill" id="optMusic" type="button">Music on</button><button class="pill" id="mBack" type="button">Back to the page</button></div>
+      </div>
+      <div id="scrLobby" hidden>
+        <h3>The paddock</h3>
+        <p id="lobbyMsg"></p>
+        <div class="rowBtns"><span>Your name</span><input id="nick" type="text" maxlength="12" autocomplete="off" aria-label="Your name"></div>
+        <ul class="plist" id="lobbyList"></ul>
+        <div class="rowBtns"><button class="pill go" id="lobbyGo" type="button">Start for everyone</button><button class="pill" id="lobbyBack" type="button">Back</button></div>
+      </div>
+      <div id="scrRes" hidden>
+        <h3 id="resTitle"></h3>
+        <p id="resSub"></p>
+        <ol class="plist" id="resList"></ol>
+        <div class="rowBtns"><button class="pill go" id="resAgain" type="button">Race again</button><button class="pill" id="resMenu" type="button">Menu</button></div>
+      </div>
+    </div>
+  </div>
+</div>

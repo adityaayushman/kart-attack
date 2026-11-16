@@ -1,0 +1,28 @@
+
+[hidden] { display: none !important; }
+/* ---------- additions: live section, modes, wipe, scroll motion ---------- */
+#play { background: var(--teal); color: var(--bone); }
+#play h2 { text-shadow: 0.04em 0.045em 0 var(--ink); }
+#play h2 em { color: var(--sun); }
+#play p { color: var(--ink); font-weight: 700; margin-bottom: 26px; }
+#modes { background: var(--sand); }
+.tickets { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)); gap: 22px; }
+.tickets li { background: var(--bone); border: 4px solid var(--ink); padding: 16px 18px 18px; box-shadow: 8px 8px 0 var(--ink); position: relative; }
+.tickets li:nth-child(odd) { transform: rotate(-1.4deg); }
+.tickets li:nth-child(even) { transform: rotate(1.2deg); }
+.tickets li::before { content: ""; position: absolute; left: -4px; right: -4px; top: 54px; border-top: 4px dashed var(--ink); }
+.tickets b { display: block; font: 400 30px/1 var(--block); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 26px; }
+.tickets span { display: block; font-weight: 700; font-size: 15px; }
+.wipe { position: fixed; inset: 0; z-index: 200; pointer-events: none; }
+.wipe i { position: absolute; inset: 0; background: var(--ink); transition: transform 0.4s cubic-bezier(0.7, 0, 0.2, 1); }
+.wipe i.a { clip-path: polygon(0 0, 62% 0, 38% 100%, 0 100%); transform: translateX(-101%); }
+.wipe i.b { clip-path: polygon(62% 0, 100% 0, 100% 100%, 38% 100%); transform: translateX(101%); background: #3a1322; }
+.wipe.shut i.a, .wipe.shut i.b { transform: none; }
+.wipe.shut.open i.a { transform: translateX(-101%); }
+.wipe.shut.open i.b { transform: translateX(101%); }
+.heroText { transform: translateY(calc(var(--sy, 0) * 0.28px)); }
+#scene { transform: translateY(calc(var(--sy, 0) * 0.12px)); }
+.slots li { overflow: hidden; }
+.slots.pre canvas { transform: translateX(-150%); }
+.slots.pre.in canvas { transform: none; transition: transform 0.7s cubic-bezier(0.2, 0.9, 0.3, 1.15); transition-delay: calc(var(--n) * 110ms); }
+@media (prefers-reduced-motion: reduce) { .heroText, #scene { transform: none; } .wipe { display: none; } .liveTag::before { animation: none; } }
