@@ -21,7 +21,7 @@ rep('<main>', '''<main>
     <div class="wrap">
       <span class="kicker">Not a recording</span>
       <h2>This is the <em>actual</em> game</h2>
-      <p>The locals are out practising in your browser right now. Press the button and you are in the red kart.</p>
+      <p>All six drivers are out practising in your browser right now. Press the button, pick one, and you are in the kart.</p>
 ''' + ghtml + '''    </div>
   </section>
 ''')
@@ -35,9 +35,9 @@ rep('</main>', '''  <section id="modes">
       <span class="kicker">Race day programme</span>
       <h2>Four ways <em>to race</em></h2>
       <ul class="tickets">
-        <li><b>Grand Prix</b><span>Three laps against the five locals, with items. Your best race time is kept.</span></li>
+        <li><b>Grand Prix</b><span>Three laps against the other five drivers, with items. Your best race time is kept.</span></li>
         <li><b>Time trial</b><span>An empty circuit and the ghost of your best lap, which stays saved in this browser.</span></li>
-        <li><b>Split screen</b><span>Two players on one keyboard, side by side, with four locals in the way.</span></li>
+        <li><b>Split screen</b><span>Two players on one keyboard, side by side, with four computer drivers in the way.</span></li>
         <li><b>Online</b><span>Open the page on two computers, both pick Online, and one of you starts the race.</span></li>
       </ul>
     </div>
