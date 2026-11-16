@@ -16,14 +16,23 @@
         <h3>Pick your race</h3>
         <div class="rowBtns"><span>Circuit</span><button class="pill" id="trk0" type="button" aria-pressed="true">Canyon Loop</button><button class="pill" id="trk1" type="button" aria-pressed="false">Rattlesnake Pass</button></div>
         <p id="menuBest"></p>
+        <div class="driver">
+          <canvas id="charCv" width="360" height="300" aria-hidden="true"></canvas>
+          <div>
+            <span class="lab">Your driver</span>
+            <b id="chName"></b>
+            <p id="chTag"></p>
+            <div class="rowBtns" id="chBtns"></div>
+          </div>
+        </div>
         <div class="modes">
-          <button id="mGP" type="button"><b>Grand Prix</b>Three laps against five locals, items on.</button>
+          <button id="mGP" type="button"><b>Grand Prix</b>Three laps against the other five drivers, items on.</button>
           <button id="mTT" type="button"><b>Time trial</b>Empty track. Chase the ghost of your best lap.</button>
-          <button id="mSplit" type="button"><b>Split screen</b>Two players on one keyboard, plus four locals.</button>
+          <button id="mSplit" type="button"><b>Split screen</b>Two players on one keyboard, plus four computer drivers.</button>
           <button id="mOnline" type="button"><b>Online</b>Race whoever else has this page open right now.</button>
         </div>
         <p>Split screen keys: player 1 on W A S D, Left Shift to drift, E for items. Player 2 on the arrows, Right Shift to drift, / for items.</p>
-        <div class="rowBtns"><button class="pill" id="optSound" type="button">Sound on</button><button class="pill" id="optMusic" type="button">Music on</button><button class="pill" id="mBack" type="button">Back to the page</button></div>
+        <div class="rowBtns"><button class="pill" id="optSound" type="button">Sound on</button><button class="pill" id="optMusic" type="button">Music on</button><button class="pill" id="p2Char" type="button">Player 2 drives</button><button class="pill" id="mBack" type="button">Back to the page</button></div>
       </div>
       <div id="scrLobby" hidden>
         <h3>The paddock</h3>
