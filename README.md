@@ -1,6 +1,6 @@
 # Copper Canyon Karts
 
-**Play it:** https://adityaayushman.github.io/kart-attack/
+**Play it:** download the repo and open `index.html` in a browser. A hosted version is temporarily unavailable.
 
 A 3D kart racer that runs in the browser, built with three.js, with a poster-style homepage wrapped around it.
 
