@@ -1,5 +1,7 @@
 # Copper Canyon Karts
 
+**Play it:** https://kart-attack-three.vercel.app
+
 A 3D kart racer that runs in the browser, built with three.js, with a poster-style homepage wrapped around it.
 
 Open `index.html` in a browser, or serve the folder with any static server.
