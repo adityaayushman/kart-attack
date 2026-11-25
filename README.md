@@ -14,8 +14,6 @@ Open `index.html` in a browser, or serve the folder with any static server.
 - Two circuits: Canyon Loop and Rattlesnake Pass
 - Best times saved in the browser
 
-Online racing uses a live room that only exists when the page is opened as a Claude artifact. From `index.html` the Online option says it is unavailable; split screen works anywhere.
-
 ## Controls
 
 | | One player | Split screen P1 | Split screen P2 |
