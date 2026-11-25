@@ -10,11 +10,9 @@ def rep(a, b, count=1):
         sys.exit('expected %d of %r, found %d' % (count, a[:60], n))
     s = s.replace(a, b)
 
-OLD = 'href="https://claude.ai/artifact/U8rJab5fvu8sNd22d7Apaj" target="_blank" rel="noopener"'
-rep(OLD, 'href="#play" data-play', 3)
 rep('</style>', extra_css + '\n' + css + '</style>')
 rep('<div class="stat"><b data-n="3">3</b><span>laps</span></div>', '<div class="stat"><b data-n="2">2</b><span>circuits</span></div>')
-rep('<div class="stat"><b data-n="3">3</b><span>boost pads</span></div>', '<div class="stat"><b data-n="4">4</b><span>ways to race</span></div>')
+rep('<div class="stat"><b data-n="3">3</b><span>boost pads</span></div>', '<div class="stat"><b data-n="3">3</b><span>ways to race</span></div>')
 rep('>Replay the start</button>', '>Replay the start, with sound</button>')
 rep('<main>', '''<main>
   <section id="play">
@@ -33,12 +31,11 @@ rep('<li><kbd>Space</kbd>Drift</li>', '<li><kbd>Space</kbd>Drift</li>\n         
 rep('</main>', '''  <section id="modes">
     <div class="wrap">
       <span class="kicker">Race day programme</span>
-      <h2>Four ways <em>to race</em></h2>
+      <h2>Three ways <em>to race</em></h2>
       <ul class="tickets">
         <li><b>Grand Prix</b><span>Three laps against the other five drivers, with items. Your best race time is kept.</span></li>
         <li><b>Time trial</b><span>An empty circuit and the ghost of your best lap, which stays saved in this browser.</span></li>
         <li><b>Split screen</b><span>Two players on one keyboard, side by side, with four computer drivers in the way.</span></li>
-        <li><b>Online</b><span>Open the page on two computers, both pick Online, and one of you starts the race.</span></li>
       </ul>
     </div>
   </section>

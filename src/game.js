@@ -561,7 +561,6 @@ window.CCK = (function () {
 
   // ---------- online ----------
   var NET = { room: null, st: 'off', race: 0, last: 0, nick: 'Racer ' + (10 + Math.floor(Math.random() * 90)), col: Math.floor(Math.random() * 6), sendT: 0, lobbyT: 0 };
-  if (window.claude && window.claude.use) { try { window.claude.use('room').then(function (r) { NET.room = r; if (r) r.onPeers(function () {}, function () { NET.room = null; }); refreshLobby(); }, function () {}); } catch (e) {} }
   function pres(patch) { if (NET.room) { try { var p = NET.room.presence(patch); if (p && p.catch) p.catch(function () {}); } catch (e) {} } }
   function racers() { if (!NET.room) return []; var out = []; try { NET.room.peers().forEach(function (p) { if (p && p.presence && p.presence.cck === 1) out.push(p); }); } catch (e) {} return out; }
   function num(v, d) { return typeof v === 'number' && isFinite(v) ? v : d; }
